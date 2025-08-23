@@ -1,0 +1,45 @@
+I am building a chat app let's finish it today.
+
+when you put flags(-y,-D)it is to tell something to the terminal
+
+-D this is used to tell the terminal that the module will be used as dev dependency
+
+.. - means go one folder up 
+. - means current directory 
+
+
+always use try catch becuz It is best practice and it is helpful to catch errors without breaking any code 
+
+
+//production
+
+you need to have the same configurations as that of package.json in backend
+
+
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "npm run start --prefix backend"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
+
+
+the scripts here will run the backend and frontend by building the node modules and start will run the backend 
+
+steps of creating project
+create frontend and backend then  
+make models, make the api endpoints and routes along with middleware
+then make the controllers(functionalities when the endpoint hits) 
+
+
+after this create the routes in frontend and make the files manageable
+
+using axios rather then fetch because it is a lot more convenient 
